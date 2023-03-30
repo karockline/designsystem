@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;1,200;1,900&family=Fredoka+One&family=Lobster&family=Monoton&family=Nanum+Pen+Script&family=Permanent+Marker&family=Raleway:wght@200;400;800&family=Roboto+Slab:wght@200;400;800&family=Sacramento&family=VT323&display=swap" rel="stylesheet">
+    <title>Carolina's Web Design System</title>
+</head>
+<body>
+
+    <header>
+        <h1>Carolina's Web Design System</h1>
+        <a href="#navbar" class="hamburger" aria-label="Open main menu">
+            <span class="sr-only"></span>
+            <span class="material-symbols-outlined" aria-hidden="true"> menu </span>
+        </a>        
+        <nav id="navbar">
+            <ul>
+                <li><a href="#color">Color</a></li>
+                <li class="dropdown"><a href="#">Palettes<span class="material-symbols-outlined">arrow_drop_down</span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#paleta-azul">Blue</a></li>
+                        <li><a href="#paleta-coral">Coral</a></li>
+                        <li><a href="#paleta-amber">Amber</a></li>
+                    </ul>
+                </li>
+                <li><a href="#fonts">Fonts</a></li>
+                <li><a href="#textStyles">Text Styles</a></li>
+                <li><a href="#contact">Me</a></li>
+            </ul>
+            <a href="#" class="close-menu" aria-label="Close main menu">
+                <span class="sr-only"></span>
+                <span class="material-symbols-outlined">  close  </span>
+            </a>
+            
+        </nav>
+    </header>
+    <section id="color">
+        <h2 class="sectionNames">Color</h2>
+        <div class="neutral">
+            <h3>Neutral colors</h3>
+            <table class="light">
+                <tr>
+                    <th colspan="4"><h4>Light mode</h4></th>
+                </tr>
+                <tr>
+                    <td class="background">
+                        Background <br> FEFBFF <br> Neutral 99
+                    </td>
+                    <td class="on-background">
+                        On Background <br> 1B1B1F <br> Neutral 10
+                    </td>
+                    <td class="surface">
+                        Surface <br> FEFBFF <br> Neutral 99
+                    </td>
+                    <td class="on-surface">
+                        On Surface <br> 1B1B1F <br> Neutral 10
+                    </td>
+                </tr>
+                <tr>
+                    <td class="surface-variant">
+                        Surface Variant <br> E1E2EC <br> Neutral-variant 90
+                    </td>
+                    <td class="on-surface-variant">
+                        On Surface Variant <br> 44474F <br> Neutral-variant 30
+                    </td>
+                    <td class="outline">
+                        Outline <br> 74777F <br> Neutral-variant 50
+                    </td>
+                    <td class="outline-variant">
+                        Outline variant <br> C4C6D0 <br> Neutral-variant 80
+                    </td>
+                </tr>
+            </table>
+            <table class="dark">
+                <tr>
+                    <th colspan="4"><h4>Dark mode</h4></th>
+                </tr>
+                <tr>
+                    <td class="background">
+                        Background <br> 1B1B1F <br> Neutral 10
+                    </td>
+                    <td class="on-background">
+                        On Background <br> E3E2E6 <br> Neutral 90
+                    </td>
+                    <td class="surface">
+                        Surface <br> 1B1B1F <br> Neutral 10
+                    </td>
+                    <td class="on-surface">
+                        On Surface <br> C7C6CA <br> Neutral 80
+                    </td>
+                </tr>
+                <tr>
+                    <td class="surface-variant">
+                        Surface Variant <br> 44474F <br> Neutral-variant 30
+                    </td>
+                    <td class="on-surface-variant">
+                        On Surface Variant <br> C4C6D0 <br> Neutral-variant 80
+                    </td>
+                    <td class="outline">
+                        Outline <br> 8E9099 <br> Neutral-variant 60
+                    </td>
+                    <td class="outline-variant">
+                        Outline variant <br> 44474F <br> Neutral-variant 30
+                    </td>
+                </tr>
+            </table>
+            <p>Neutral roles are used for surfaces and backgrounds, as well as high emphasis text and icons.</p>
+            <p>Surface variant and on-surface variant can be used for differentiation against a surface.</p>
+            <p>Outline is a utility color that creates boundaries, visual hierarchy and emphasis to improve usability. The outline color has a 3:1 contrast with all surface colors. <br>
+            Use the outline color for accessible boundaries around interactive items such as chips, buttons, and text fields.    
+            </p>
+            <p>
+            For components that contain multiple elements, such as cards or dividers, use the Outline variant color. <br>
+            Outline variant is a utility color that creates boundaries for decorative elements when a 3:1 contrast isn’t required, such as for dividers or decorative elements.
+            </p>
+        </div>
+        <div class="inverse">
+            <h3>Inverse roles</h3>
+            <table>
+                <tr>
+                    <td class="inverse-surface">
+                        Inverse Surface <br> 303033 <br> Neutral 20
+                    </td>
+                    <td class="inverse-on-surface">
+                        Inverse On Surface <br> F2F0F4 <br> Neutral 95
+                    </td>
+                    <td class="inverse-primary">
+                        Inverse Primary <br> ADC6FF <br> Primary 80
+                    </td>
+                </tr>
+            </table>
+            <p>Inverse surface and inverse on surface are used for displaying the reverse of what’s seen in the surrounding UI.<br>
+            For example, snackbars use the reverse color mapping to bring attention to an alert.</p>            
+        </div>
+        <div class="error">
+            <h3>Error colors</h3>
+              <table class="light">
+                <tr>
+                    <th colspan="4">Light Mode</th>
+                </tr>
+                <tr>
+                    <td class="error-box">
+                        Error <br> BA1A1A <br> Error 40
+                    </td>
+                    <td class="on-error">
+                        On Error <br> FFFFFF <br> Error 100
+                    </td>
+                    <td class="error-container">
+                        Error Container <br> FFDAD6 <br> Error 90
+                    </td>
+                    <td class="on-error-container">
+                        On Error Container <br> 410002 <br> Error 10
+                    </td>
+                </tr>
+              </table>
+              <table class="dark">
+                <tr>
+                    <th colspan="4">Dark Mode</th>
+                </tr>
+                <tr>
+                    <td class="error-box">
+                        Error <br> FFB4AB <br> Error 80
+                    </td>
+                    <td class="on-error">
+                        On Error <br> 690005 <br> Error 20
+                    </td>
+                    <td class="error-container">
+                        Error Container <br> 93000A <br> Error 30
+                    </td>
+                    <td class="on-error-container">
+                        On Error Container <br> FFDAD6 <br> Error 90
+                    </td>
+                </tr>
+              </table>
+              <p>Error color indicates errors in components, such as invalid text in a text field.</p>
+        </div>
+        <div id="paleta-azul" class="blue palette">
+            <h3>Blue palette</h3>
+            <table class="light">
+             <tr>
+                <th colspan="4">Light Mode</th>
+             </tr>
+             <tr>
+                <td class="primary">
+                    Primary <br> 005AC1 <br> Primary 40
+                </td>
+                <td class="on-primary">
+                    On Primary <br> FFFFFF <br> Primary 100
+                </td>
+                <td class="primary-container">
+                    Primary Container <br> D8E2FF <br> Primary 90
+                </td>
+                <td class="on-primary-container">
+                    On Primary Container <br> 001A41 <br> Primary 10
+                </td>
+             </tr>
+             <tr>
+                <td class="secondary">
+                    Secondary <br> 575E71 <br> Secondary 40
+                </td>
+                <td class="on-secondary">
+                    On Secondary <br> FFFFFF <br> Secondary 100
+                </td>
+                <td class="secondary-container">
+                    Secondary Container <br> DBE2F9 <br> Secondary 90
+                </td>
+                <td class="on-secondary-container">
+                    On Secondary Container <br> 141B2C <br> Secondary 10
+                </td>
+             </tr>
+             <tr>
+                <td class="terciary">
+                    Terciary <br> 715573 <br> Terciary 40
+                </td>
+                <td class="on-terciary">
+                    On Terciary <br> FFFFFF <br> Terciary 100
+                </td>
+                <td class="terciary-container">
+                    Terciary Container <br> FBD7FC <br> Terciary 90
+                </td>
+                <td class="on-terciary-container">
+                    On Terciary Container <br> 29132D <br> Terciary 10
+                </td>
+             </tr>
+            </table>
+            <div class="showcase">
+                <div class="fondo">
+                    <div class="topnav">
+                        <div class="square"></div>
+                        <div class="circle"></div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="topbar">
+                        <div class="icon menu">
+                            <span class="material-symbols-outlined">menu</span>
+                        </div>                        
+                        <h2>The Blue App</h2>
+                        <div class="icon share">
+                            <span class="material-symbols-outlined">share</span>
+                        </div>                        
+                    </div>
+                    <div class="content">
+                        <p> <strong>Computer language design</strong> is just like a stroll in the park. Jurassic Park, that is. (Larry Wall)</p>
+                        <div class="ventanilla">
+                            <div>
+                                <p>Look again at that dot. That's here. That's home. That's us. On it everyone you love...</p>
+                                <img src="./resources/images/birds-dessert.jpg" alt="A cartoon of 2 birds in the dessert">
+                            </div>
+                        </div>
+                        <div>
+                            <span class="filled botones"><p>filled</p></span>
+                            <span class="outlined botones"><p>outlined</p></span>
+                        </div>
+                        <div>
+                            <input type="range" min="0" max="12" step="1" class="slider">
+                        </div>
+                        <div class="icon rocket">
+                            <span class="material-symbols-outlined">
+                                rocket
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+            <table class="dark">
+               <tr>
+                  <th colspan="4">Dark Mode</th>
+               </tr>
+               <tr>
+                <td class="primary">
+                    Primary <br> ADC6FF <br> Primary 80
+                </td>
+                <td class="on-primary">
+                    On Primary <br> 002E69 <br> Primary 20
+                </td>
+                <td class="primary-container">
+                    Primary Container <br> 004494 <br> Primary 30
+                </td>
+                <td class="on-primary-container">
+                    On Primary Container <br> D8E2FF <br> Primary 90
+                </td>
+               </tr>
+               <tr>
+                  <td class="secondary">
+                    Secondary <br> BFC6D6 <br> Secondary 80
+                  </td>
+                  <td class="on-secondary">
+                    On Secondary <br> 293041 <br> Secondary 20
+                  </td>
+                  <td class="secondary-container">
+                    Secondary Container <br> 3F4759 <br> Secondary 30
+                  </td>
+                  <td class="on-secondary-container">
+                    On Secondary Container <br> DBE2F9 <br> Secondary 90
+                  </td>
+               </tr>
+               <tr>
+                  <td class="terciary">
+                    Terciary <br> DEBCDF <br> Terciary 80
+                  </td>
+                  <td class="on-terciary">
+                    On Terciary <br> 402843 <br> Terciary 20
+                  </td>
+                  <td class="terciary-container">
+                    Terciary Container <br> 583E5B <br> Terciary 30
+                  </td>
+                  <td class="on-terciary-container">
+                    On Terciary Container <br> FBD7FC <br> Terciary 90
+                  </td>
+               </tr>
+            </table>
+            <div class="showcase black">
+                <div class="fondo">
+                    <div class="topnav">
+                        <div class="square"></div>
+                        <div class="circle"></div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="topbar">
+                        <div class="icon menu">
+                            <span class="material-symbols-outlined">menu</span>
+                        </div>                        
+                        <h2>The Blue App</h2>
+                        <div class="icon share">
+                            <span class="material-symbols-outlined">share</span>
+                        </div>                        
+                    </div>
+                    <div class="content">
+                        <p> <strong style="color: #FFFFFF;">If debugging is the process of removing bugs,</strong>  then programming must be the process of putting them in. (E.W.Dijkstra)</p>
+                        <div class="ventanilla">
+                            <div>
+                                <p>Look again at that dot. That's here. That's home. That's us. On it everyone you love...</p>
+                                <img src="./resources/images/birds-dessert.jpg" alt="A cartoon of 2 birds in the dessert">
+                            </div>
+                        </div>
+                        <div>
+                            <span class="filled botones"><p>filled</p></span>
+                            <span class="outlined botones"><p>outlined</p></span>
+                        </div>
+                        <div>
+                            <input type="range" min="0" max="12" step="1" class="slider">
+                        </div>
+                        <div class="icon rocket">
+                            <span class="material-symbols-outlined">
+                                rocket
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="paleta-coral" class="coral palette">
+           <h3>Coral Palette</h3>
+           <table class="light">
+             <tr>
+                <th colspan="4">Light Mode</th>
+             </tr>
+             <tr>
+                <td class="primary">
+                    Primary <br> FA8E6C <br> Primary 70
+                </td>
+                <td class="on-primary">
+                    On Primary <br> FFFFFF <br> Primary 100 
+                </td>
+                <td class="primary-container">
+                    Primary Container <br> FFDBD0 <br> Primary 90
+                </td>
+                <td class="on-primary-container">
+                   On Primary Container <br> 3A0B00 <br> Primary 10
+                </td>
+             </tr>
+             <tr>
+                <td class="secondary">
+                    Secondary <br> 77574D <br> Secondary 40
+                </td>
+                <td class="on-secondary">
+                    On Secondary <br> FFFFFF <br> Secondary 100
+                </td>
+                <td class="secondary-container">
+                    Secondary Container <br> E7BDB1 <br> Secondary 80
+                </td>
+                <td class="on-secondary-container">
+                    On Secondary Container <br> 2C150E <br> Secondary 10
+                </td>
+             </tr>
+             <tr>
+                <td class="terciary">
+                    Terciary <br> 6B5E2F <br> Terciary 40 
+                </td>
+                <td class="on-terciary">
+                    On Terciary <br> FFFFFF <br> Terciary 100
+                </td>
+                <td class="terciary-container">
+                    Terciary Container <br> F5E2A7 <br> Terciary 90
+                </td>
+                <td class="on-terciary-container">
+                    On Terciary Container <br> 221B00 <br> Terciary 10
+                </td>
+             </tr>
+           </table>
+           <div class="showcase">
+              <div class="fondo">
+                <div class="topnav">
+                    <div class="square"></div>
+                    <div class="circle"></div>
+                    <div class="triangle"></div>
+                </div>
+                <div class="topbar">
+                    <div class="icon menu">
+                        <span class="material-symbols-outlined">menu</span>
+                    </div>                        
+                    <h2>The Coral App</h2>
+                    <div class="icon share">
+                        <span class="material-symbols-outlined">share</span>
+                    </div>                        
+                </div>
+                <div class="content">
+                    <p> <strong>Computer language design</strong> is just like a stroll in the park. Jurassic Park, that is. (Larry Wall)</p>
+                    <div class="ventanilla">
+                        <div>
+                            <p>Look again at that dot. That's here. That's home. That's us. On it everyone you love...</p>
+                            <img src="./resources/images/birds-dessert.jpg" alt="A cartoon of 2 birds in the dessert">
+                        </div>
+                    </div>
+                    <div>
+                        <span class="filled botones"><p>filled</p></span>
+                        <span class="outlined botones"><p>outlined</p></span>
+                    </div>
+                    <div>
+                        <input type="range" min="0" max="12" step="1" class="slider">
+                    </div>
+                    <div class="icon bunny">
+                        <span class="material-symbols-outlined">
+                            cruelty_free
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <table class="dark">
+             <tr>
+                <th colspan="4">Dark Mode</th>
+             </tr>
+             <tr>
+                <td class="primary">
+                    Primary <br> FFB59E <br> Primary 80
+                </td>
+                <td class="on-primary">
+                    On Primary <br> 5E1701 <br> Primary 20
+                </td>
+                <td class="primary-container">
+                    Primary Container <br> BA5C3E <br> Primary 50
+                </td>
+                <td class="on-primary-container">
+                    On Primary Container <br> FFEDE8 <br> Primary 95
+                </td>
+             </tr>
+             <tr>
+                <td class="secondary">
+                    Secondary <br> E7BDB1 <br> Secondary 80
+                </td>
+                <td class="on-secondary">
+                    On Secondary <br> 442A22 <br> Secondary 20
+                </td>
+                <td class="secondary-container">
+                    Secondary Container <br> 5D4037 <br> Secondary 30
+                </td>
+                <td class="on-secondary-container">
+                    On Secondary Container <br> FFDBD0 <br> Secondary 90
+                </td>
+             </tr>
+             <tr>
+                <td class="terciary">
+                    Terciary <br> D7C68D <br> Terciary 80
+                </td>
+                <td class="on-terciary">
+                    On Terciary <br> 3A3005 <br> Terciary 20
+                </td>
+                <td class="terciary-container">
+                    Terciary Container <br> 52461A <br> Terciary 30
+                </td>
+                <td class="on-terciary-container">
+                    On Terciary Container <br> F5E2A7 <br> Terciary 90
+                </td>
+             </tr>
+            </table>
+            <div class="showcase black">
+                <div class="fondo">
+                    <div class="topnav">
+                        <div class="square"></div>
+                        <div class="circle"></div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="topbar">
+                        <div class="icon menu">
+                            <span class="material-symbols-outlined">menu</span>
+                        </div>                        
+                        <h2>The Dark Coral</h2>
+                        <div class="icon share">
+                            <span class="material-symbols-outlined">share</span>
+                        </div>                        
+                    </div>
+                    <div class="content">
+                        <p> <strong style="color: #FFFFFF;">If debugging is the process of removing bugs,</strong>  then programming must be the process of putting them in. (E.W.Dijkstra)</p>
+                        <div class="ventanilla">
+                            <div>
+                                <p>Look again at that dot. That's here. That's home. That's us. On it everyone you love...</p>
+                                <img src="./resources/images/birds-dessert.jpg" alt="A cartoon of 2 birds in the dessert">
+                            </div>
+                        </div>
+                        <div>
+                            <span class="filled botones"><p>filled</p></span>
+                            <span class="outlined botones"><p>outlined</p></span>
+                        </div>
+                        <div>
+                            <input type="range" min="0" max="12" step="1" class="slider">
+                        </div>
+                        <div class="icon bunny">
+                            <span class="material-symbols-outlined">
+                                cruelty_free
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div id="paleta-amber" class="amber palette">
+           <h3>Amber palette</h3>
+           <table class="light">
+           <tr>
+            <th colspan="4">Light mode</th>
+           </tr>
+           <tr>
+            <td class="primary">
+                Primary <br> 735C00 <br> Primary 40
+            </td>
+            <td class="on-primary">
+                On Primary <br> FFFFFF <br> Primary 100
+            </td>
+            <td class="primary-container">
+                Primary Container <br> FFE087 <br> Primary 90
+            </td>
+            <td class="on-primary-container">
+                On Primary Container <br> 241A00 <br> Primary 10
+            </td>
+           </tr>
+           <tr>
+            <td class="secondary">
+                Secondary <br> 695D3F <br> Secondary 40
+            </td>
+            <td class="on-secondary">
+                On Secondary <br> FFFFFF <br> Secondary 100
+            </td>
+            <td class="secondary-container">
+                Secondary Container <br> F1E1BB <br> Secondary 90
+            </td>
+            <td class="on-secondary-container">
+                On Secondary Container <br> 221B04 <br> Secondary 10
+            </td>
+           </tr>
+           <tr>
+            <td class="terciary">
+                Terciary <br> 46664B <br> Terciary 40
+            </td>
+            <td class="on-terciary">
+                On Terciary <br> FFFFFF <br> Terciary 100
+            </td>
+            <td class="terciary-container">
+                Terciary Container <br> C8ECC9 <br> Terciary 90
+            </td>
+            <td class="on-terciary-container">
+                On Terciary Container <br> 03210C <br> Terciary 10
+            </td>
+           </tr>
+           </table>
+
+           <div class="showcase">
+            <div class="fondo">
+              <div class="topnav">
+                  <div class="square"></div>
+                  <div class="circle"></div>
+                  <div class="triangle"></div>
+              </div>
+              <div class="topbar">
+                  <div class="icon menu">
+                      <span class="material-symbols-outlined">menu</span>
+                  </div>                        
+                  <h2>The Amber App</h2>
+                  <div class="icon share">
+                      <span class="material-symbols-outlined">share</span>
+                  </div>                        
+              </div>
+              <div class="content">
+                  <p> <strong>Computer language design</strong> is just like a stroll in the park. Jurassic Park, that is. (Larry Wall)</p>
+                  <div class="ventanilla">
+                      <div>
+                          <p>Look again at that dot. That's here. That's home. That's us. On it everyone you love...</p>
+                          <img src="./resources/images/birds-dessert.jpg" alt="A cartoon of 2 birds in the dessert">
+                      </div>
+                  </div>
+                  <div>
+                      <span class="filled botones"><p>filled</p></span>
+                      <span class="outlined botones"><p>outlined</p></span>
+                  </div>
+                  <div>
+                      <input type="range" min="0" max="12" step="1" class="slider">
+                  </div>
+                  <div class="icon surfer">
+                      <span class="material-symbols-outlined">
+                          surfing
+                          </span>
+                  </div>
+              </div>
+            </div>
+            </div>
+            <table class="dark">
+            <tr>
+                <th colspan="4">Dark Mode</th>
+            </tr>
+            <tr>
+                <td class="primary">
+                    Primary <br> EBC23E <br> Primary 80
+                </td>
+                <td class="on-primary">
+                    On Primary <br> 3C2F00 <br> Primary 20
+                </td>
+                <td class="primary-container">
+                    Primary Container <br> 574500 <br> Primary 30
+                </td>
+                <td class="on-primary-container">
+                    On Primary Container <br> FFE087 <br> Primary 90
+                </td>
+            </tr>
+            <tr>
+                <td class="secondary">
+                    Secondary <br> D4C5A1 <br> Secondary 80
+                </td>
+                <td class="on-secondary">
+                    On Secondary <br> 383016 <br> Secondary 20
+                </td>
+                <td class="secondary-container">
+                    Secondary Container <br> 50462A <br> Secondary 30
+                </td>
+                <td class="on-secondary-container">
+                    On Secondary Container <br> F1E1BB <br> Secondary 10
+                </td>
+            </tr>
+            <tr>
+                <td class="terciary">
+                    Terciary <br> ACCFAE <br> Terciary 80
+                </td>
+                <td class="on-terciary">
+                    On Terciary <br> 18371F <br> Terciary 20
+                </td>
+                <td class="terciary-container">
+                    Terciary Container <br> 2F4E34 <br> Terciary 30
+                </td>
+                <td class="on-terciary-container">
+                    On Terciary Container <br> C8ECC9 <br> Terciary 10
+                </td>
+            </tr>
+            </table>
+            <div class="showcase black">
+                <div class="fondo">
+                    <div class="topnav">
+                        <div class="square"></div>
+                        <div class="circle"></div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="topbar">
+                        <div class="icon menu">
+                            <span class="material-symbols-outlined">menu</span>
+                        </div>                        
+                        <h2>The Dark Amber</h2>
+                        <div class="icon share">
+                            <span class="material-symbols-outlined">share</span>
+                        </div>                        
+                    </div>
+                    <div class="content">
+                        <p> <strong style="color: #FFFFFF;">If debugging is the process of removing bugs,</strong>  then programming must be the process of putting them in. (E.W.Dijkstra)</p>
+                        <div class="ventanilla">
+                            <div>
+                                <p>Look again at that dot. That's here. That's home. That's us. On it everyone you love...</p>
+                                <img src="./resources/images/birds-dessert.jpg" alt="A cartoon of 2 birds in the dessert">
+                            </div>
+                        </div>
+                        <div>
+                            <span class="filled botones"><p>filled</p></span>
+                            <span class="outlined botones"><p>outlined</p></span>
+                        </div>
+                        <div>
+                            <input type="range" min="0" max="12" step="1" class="slider">
+                        </div>
+                        <div class="icon surfer">
+                            <span class="material-symbols-outlined">
+                                surfing
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>This Color theory information and notation is based on Material Design 3 <a href="https://m3.material.io/styles/color/the-color-system/color-roles" target="_blank">Color system</a> by Google, click for more information.</p>
+        </footer>        
+    </section>
+    <section id="fonts">
+        <h2 class="sectionNames">Fonts</h2>
+        <div class="notebook">
+            <div class="lines">
+                <ul class="notes robotoSlab">
+                    <li><h3>Roboto Slab</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                <div class="postit serif">
+                    <p>serif</p>
+                </div>
+                <ul class="notes bitter">
+                    <li><h3>Bitter</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                <div class="postit sans"><p>Sans serif</p></div>
+                <ul class="notes raleway">
+                    <li><h3>Raleway</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                <div class="postit monos"><p>Mono<br>spaced</p></div>
+                <ul class="notes vt323">
+                    <li><h3>VT323</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                
+                <ul class="notes nanum">
+                    <li><h3>Nanum Pen Script</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                <div class="postit handw"><p>Handwri-<br>tting</p></div>
+                <ul class="notes lobster">
+                    <li><h3>Lobster</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                <ul class="notes permanentMarker">
+                    <li><h3>Permanent Marker</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                <ul class="notes sacramento">
+                    <li><h3>Sacramento</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                <ul class="notes fredoka">
+                    <li><h3>Fredoka One</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+                <ul class="notes monoton">
+                    <li><h3>Monoton</h3></li>
+                    <li>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</li>
+                    <li><strong>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</strong></li>
+                    <li class="underlined"><em>Weigh anchor Plate Fleet skysail list smartly rum walk the plank hearties schooner yard.</em></li>
+                </ul>
+            </div>
+           
+        </div>
+    </section>
+    <section id="textStyles">
+
+        <h2 class="sectionNames">Text Styles</h2>
+        <div class="palette">
+            <p>Depends on the message I want to project and what the client is expecting because each website is unique.
+            This styles should be taken just as some examples of my approach but not a definite one </p>
+            
+            <h3>Main page heading</h3>
+            <div class="Headings">
+                <div>
+                    <h1 id="mainHed1">Wild and Free</h1>
+                    <ul>
+                        <li>Font-weight: 800 extra bold</li>
+                        <li>Font-size: 3rem 48px</li>
+                        <li>Font-family: Roboto Slab</li>
+                    </ul>
+                </div>
+                <div>            
+                    <h1 id="mainHed2">Irresistible</h1>
+                    <ul>
+                        <li>Font-weight: 400 regular</li>
+                        <li>Font-size: 3rem 48px</li>
+                        <li>Font-family: Monoton</li>
+                    </ul>
+                </div>
+                <div>            
+                    <h1 id="mainHed3"><em>Become</em></h1>
+                    <ul>
+                        <li>Font-weight: 900 italic</li>
+                        <li>Font-size: 3rem 48px</li>
+                        <li>Font-family: Bitter</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Subheading</h3>
+            <div class="Headings">
+                <div>
+                    <h2 id="subHed1">Love and Adventure</h2>
+                    <ul>
+                        <li>Font-weight: 400 regular</li>
+                        <li>Font-size: 2rem 32px</li>
+                        <li>Font-family: Lobster</li>
+                    </ul>
+                </div>
+                <div>
+                      <h2 id="subHed2">Explore your passions</h2>
+                      <ul>
+                        <li>Font-weight: 400 regular</li>
+                        <li>Font-size: 2rem 32px</li>
+                        <li>Font-family: Sacramento</li>
+                      </ul>
+                </div>
+                <div>
+                    <h2 id="subHed3">Pop rockstar</h2>
+                    <ul>
+                      <li>Font-weight: 400 regular</li>
+                      <li>Font-size: 2rem 32px</li>
+                      <li>Font-family: Fredoka One</li>
+                    </ul>
+              </div>
+            </div>
+            
+            <h3>Paragraph text</h3>
+            <div class="Headings">
+                <div>
+                    <p id="par1">Trifecta sweet blue mountain, pumpkin spice, sugar, bar  cultivar redeye grinder skinny. Decaffeinated aged, est ut french press aroma percolator frappuccino. Caramelization dripper roast, milk chicory a brewed viennese seasonal. Et redeye in beans in french press id est macchiato aged ut redeye.</p>
+                    <ul>
+                        <li>Font-weight: 400 regular</li>
+                        <li>Font-size: 0.8rem 12.8px</li>
+                        <li>Font-family: Raleway</li>
+                    </ul>
+                </div>
+                <div>
+                    <p id="par2">Decaffeinated at in aroma aftertaste plunger pot arabica. Foam coffee café au lait spoon strong, cultivar shop coffee café au lait filter. Latte, caramelization and, aged macchiato flavour americano grounds decaffeinated extra  that aromatic. Beans skinny flavour cappuccino single shot turkish that bar  cappuccino extra.</p>
+                    <ul>
+                        <li>Font-weight: 500 medium</li>
+                        <li>Font-size: 0.8rem 12.8px</li>
+                        <li>Font-family: Bitter</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>Notes</h3>
+            <div class="Headings">
+                <div>
+                    <p class="postit2" id="not1">I love you</p>
+                    <ul>
+                        <li>Font-weight: 400 regular</li>
+                        <li>Font-size: 1.4rem 22.4px </li>
+                        <li>Font-family: Permanent Marker</li>
+                        <li>To highlight elements in a fun way</li>
+                    </ul>
+                </div>
+                <div class="Headings">
+                    <div class="foto">
+                        <img src="./resources/images/lupita-sunflowers.jpg" alt="border collie with sunflowers on the back">
+                        <p id="not2">My dog Lupita</p>
+                    </div>
+                    <ul>
+                        <li>Font-weight: 400 regular</li>
+                        <li>Font-size: 1.8rem 28.8px</li>
+                        <li>Font-family: Nanum Pen Script</li>
+                        <li>Footnotes on images</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <h3>Code snip</h3>
+            <div class="centcode">
+                <div class="code">
+                    <span class="element">&lt;body&gt;</span> <br>
+                    <span class="comment">&lt;!-- Pies, para que los quiero, cuando tengo alas para volar --&gt;</span> <br>
+                    <span class="element">&lt;p&gt;</span> Feet, what do I need you for when I have wings to fly?<span class="element">&lt;/p&gt;</span> <br>
+                    <span class="element">&lt;p&gt;</span>- Frida Kahlo <span class="element">&lt;/p&gt;</span> <br>
+                    <span class="element">&lt;/body&gt;</span> <br>
+                </div>                
+                   <ul>
+                    <li>Font-weight: 400 regular</li>
+                    <li>Font-size: 1rem 16px</li>
+                    <li>Font-family: VT323 Monospace</li>
+                   </ul>
+                
+            </div>
+  
+        </div>
+    </section>
+    <section id="contact">
+    
+    <div class="palette">
+
+        <h2 id="work">Let's work together!</h2>
+
+    <div class="contactinfo">
+        <div class="profilepic"></div>       
+        <div>
+            <ul>
+                <li class="signature">This website was created by <span id="name">Carolina Garza Velez</span></li>
+                <!--<li>Check out my main webpage</li>-->
+                <li> <span class="callto">Shoot me an email to:</span>
+                    <span class="action">carolina.dim.nous@gmail.com</span>
+                </li>
+                <li> <span class="callto">Follow me in Instagram at:</span> 
+                    <span class="action">@karockStudios</span>
+                    
+                    </li>
+            </ul>       
+            
+        </div>
+    </div>
+    
+    
+
+    </div>
+    </section>
+    <script src="./myscript.js">
+    </script>
+</body>
+</html>
